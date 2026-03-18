@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Grill on Wheel - Best burgers & shawarma in North Miami Beach, FL. Fast food truck with 4.8★ rating. Fresh, delicious street food. Order now!">
+    <meta name="keywords" content="burgers, shawarma, food truck, fast food, North Miami Beach, hibachi, Mexican burger, curbside pickup, delivery">
+    <meta name="author" content="Grill on Wheel">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Grill on Wheel | Best Burgers & Shawarma in North Miami Beach, FL">
+    <meta property="og:description" content="Experience delicious gourmet burgers and shawarma at Grill on Wheel food truck. Fresh ingredients, fast service, 4.8★ rating. Open 1-9 PM daily.">
+    <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 630'%3E%3Crect fill='%23111111' width='1200' height='630'/%3E%3Crect fill='%23ff6b35' x='100' y='100' width='1000' height='430' rx='20'/%3E%3Ctext x='600' y='350' font-size='80' font-weight='bold' fill='%23ffffff' text-anchor='middle' font-family='Arial'>GRILL ON WHEEL</text%3E%3Ctext x='600' y='420' font-size='40' fill='%23ffd700' text-anchor='middle' font-family='Arial'>Best Burgers & Shawarma</text%3E%3C/svg%3E">
+    <meta property="og:type" content="business.business">
+    <meta property="og:url" content="https://grill-on-wheel.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Grill on Wheel | Best Burgers & Shawarma">
+    <meta name="twitter:description" content="Gourmet burgers & shawarma food truck in North Miami Beach. 4.8★ rating. Order now!">
+    <meta name="theme-color" content="#ff6b35">
+
+    <!-- Schema.org Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FastFoodRestaurant",
+        "name": "Grill on Wheel",
+        "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 630'%3E%3Crect fill='%23111111' width='1200' height='630'/%3E%3Crect fill='%23ff6b35' x='100' y='100' width='1000' height='430' rx='20'/%3E%3Ctext x='600' y='350' font-size='80' font-weight='bold' fill='%23ffffff' text-anchor='middle' font-family='Arial'>GRILL ON WHEEL</text%3E%3Ctext x='600' y='420' font-size='40' fill='%23ffd700' text-anchor='middle' font-family='Arial'>Best Burgers & Shawarma</text%3E%3C/svg%3E",
+        "description": "Best burgers and shawarma in North Miami Beach. Fresh ingredients, fast service, delivered daily.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "2599 NE 163rd St",
+            "addressLocality": "North Miami Beach",
+            "addressRegion": "FL",
+            "postalCode": "33160",
+            "addressCountry": "US"
+        },
+        "telephone": "(772) 888-7771",
+        "url": "https://grill-on-wheel.com",
+        "priceRange": "$10–20",
+        "openingHours": "Mo-Su 1:00 PM-9:00 PM",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "387"
+        },
+        "servesCuisine": ["Burger", "Middle Eastern", "Mexican"],
+        "availableDeliveryMethod": ["Curbside", "DeliveryMethod"],
+        "sameAs": [
+            "https://www.google.com/maps/place/Grill+on+Wheel/@25.9266584,-80.1477449"
+        ]
+    }
+    </script>
+
+    <title>Grill on Wheel | Best Burgers & Shawarma in North Miami Beach, FL</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --dark-bg: #111111;
+            --text-white: #ffffff;
+            --orange-accent: #ff6b35;
+            --yellow-secondary: #ffd700;
+            --card-bg: #1a1a1a;
+            --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-white);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(17, 17, 17, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid var(--orange-accent);
+            padding: 1rem 2rem;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--orange-accent);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .cta-button {
+            background: var(--orange-accent);
+            color: var(--text-white);
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 1rem;
+            text-decoration: none;
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .cta-button:hover {
+            background: var(--yellow-secondary);
+            color: var(--dark-bg);
+            transform: scale(1.05);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 6px;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: var(--orange-accent);
+            border-radius: 2px;
+            transition: var(--transition);
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 70px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #111111 0%, #1a1a1a 50%, #2d2d2d 100%);
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: var(--orange-accent);
+            border-radius: 50%;
+            opacity: 0.1;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -5%;
+            width: 400px;
+            height: 400px;
+            background: var(--yellow-secondary);
+            clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+            opacity: 0.08;
+            animation: pulse 4s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-30px) rotate(5deg); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1) rotate(0deg); }
+            50% { transform: scale(1.1) rotate(5deg); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            max-width: 800px;
+            padding: 2rem;
+        }
+
+        .rating-badge {
+            display: inline-block;
+            background: var(--card-bg);
+            border: 2px solid var(--orange-accent);
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            margin-bottom: 2rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .rating-badge span {
+            color: var(--yellow-secondary);
+            margin-right: 0.5rem;
+        }
+
+        .hero h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 1rem;
+            letter-spacing: -1px;
+            background: linear-gradient(135deg, var(--text-white) 0%, var(--orange-accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: #cccccc;
+            line-height: 1.6;
+        }
+
+        .hero-ctas {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .secondary-button {
+            background: transparent;
+            color: var(--text-white);
+            border: 2px solid var(--orange-accent);
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 1rem;
+            text-decoration: none;
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .secondary-button:hover {
+            background: var(--orange-accent);
+            color: var(--dark-bg);
+        }
+
+        /* Stats Section */
+        .stats {
+            background: var(--card-bg);
+            padding: 4rem 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 10;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 1.5rem;
+            border-left: 3px solid var(--orange-accent);
+            transition: var(--transition);
+        }
+
+        .stat-item:hover {
+            transform: translateY(-5px);
+            border-left-color: var(--yellow-secondary);
+        }
+
+        .stat-number {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--orange-accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            color: #999999;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Menu Section */
+        .menu {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: var(--orange-accent);
+            border-radius: 2px;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .menu-card {
+            background: var(--card-bg);
+            border: 2px solid transparent;
+            border-radius: 12px;
+            padding: 2rem;
+            transition: var(--transition);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .menu-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 107, 53, 0.1), transparent);
+            transition: var(--transition);
+        }
+
+        .menu-card:hover {
+            border-color: var(--orange-accent);
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(255, 107, 53, 0.2);
+        }
+
+        .menu-card:hover::before {
+            left: 100%;
+        }
+
+        .menu-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .menu-card h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--orange-accent);
+        }
+
+        .menu-card p {
+            color: #999999;
+            line-height: 1.6;
+        }
+
+        /* Reviews Section */
+        .reviews {
+            background: var(--card-bg);
+            padding: 4rem 2rem;
+        }
+
+        .reviews-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .review-card {
+            background: var(--dark-bg);
+            border-left: 4px solid var(--yellow-secondary);
+            padding: 2rem;
+            border-radius: 8px;
+            transition: var(--transition);
+        }
+
+        .review-card:hover {
+            transform: translateX(10px);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.1);
+        }
+
+        .review-stars {
+            color: var(--yellow-secondary);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+        }
+
+        .review-text {
+            font-style: italic;
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .review-author {
+            font-weight: 600;
+            color: var(--orange-accent);
+        }
+
+        /* Location Section */
+        .location {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .location-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            align-items: start;
+            margin-top: 3rem;
+        }
+
+        .map-container {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(255, 107, 53, 0.15);
+            height: 450px;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .location-info {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 2px solid var(--orange-accent);
+        }
+
+        .info-block {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #333333;
+        }
+
+        .info-block:last-child {
+            border-bottom: none;
+        }
+
+        .info-label {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.9rem;
+            color: var(--orange-accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .info-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .info-content a {
+            color: var(--yellow-secondary);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .info-content a:hover {
+            color: var(--orange-accent);
+            text-decoration: underline;
+        }
+
+        .hours-list {
+            list-style: none;
+        }
+
+        .hours-list li {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px dotted #333333;
+        }
+
+        .hours-list li:last-child {
+            border-bottom: none;
+        }
+
+        /* CTA Section */
+        .final-cta {
+            background: linear-gradient(135deg, var(--orange-accent) 0%, #ff8c52 100%);
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .final-cta h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--dark-bg);
+        }
+
+        .final-cta p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            color: rgba(17, 17, 17, 0.8);
+        }
+
+        .final-cta .cta-button {
+            background: var(--dark-bg);
+            color: var(--orange-accent);
+            font-size: 1.2rem;
+            padding: 1rem 2rem;
+        }
+
+        .final-cta .cta-button:hover {
+            background: var(--text-white);
+            color: var(--dark-bg);
+        }
+
+        /* Footer */
+        footer {
+            background: #000000;
+            padding: 2rem;
+            text-align: center;
+            border-top: 2px solid var(--orange-accent);
+            color: #666666;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-container {
+                padding: 0;
+            }
+
+            .logo {
+                font-size: 1.3rem;
+            }
+
+            .cta-button {
+                padding: 0.6rem 1rem;
+                font-size: 0.9rem;
+            }
+
+            .hero {
+                margin-top: 60px;
+                min-height: 80vh;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+            .hero-ctas {
+                flex-direction: column;
+            }
+
+            .hero-ctas .cta-button,
+            .hero-ctas .secondary-button {
+                width: 100%;
+            }
+
+            .location-content {
+                grid-template-columns: 1fr;
+            }
+
+            .map-container {
+                height: 300px;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .stats {
+                grid-template-columns: 1fr;
+                padding: 2rem;
+            }
+
+            .stat-item {
+                border-left: none;
+                border-bottom: 3px solid var(--orange-accent);
+            }
+
+            .menu-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .final-cta h2 {
+                font-size: 2rem;
+            }
+
+            .final-cta p {
+                font-size: 1rem;
+            }
+
+            nav {
+                padding: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .rating-badge {
+                font-size: 0.9rem;
+                padding: 0.5rem 1rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+                margin-bottom: 2rem;
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+
+            .menu-card {
+                padding: 1.5rem;
+            }
+
+            .location-info {
+                padding: 1.5rem;
+            }
+        }
+
+        /* Accessibility */
+        a:focus,
+        button:focus {
+            outline: 2px solid var(--yellow-secondary);
+            outline-offset: 2px;
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">🔥 Grill on Wheel</div>
+            <a href="tel:(772) 888-7771" class="cta-button">Order Now</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="rating-badge">
+                <span>★★★★★</span>4.8 Stars | 387+ Reviews
+            </div>
+            <h1>Flavor on Wheels</h1>
+            <p>Gourmet burgers, authentic shawarma, and street food done right. Fresh ingredients. Lightning-fast service. Pure deliciousness.</p>
+            <div class="hero-ctas">
+                <a href="tel:(772) 888-7771" class="cta-button">📞 Call to Order</a>
+                <a href="#menu" class="secondary-button">Explore Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stat-item">
+            <div class="stat-number">4.8</div>
+            <div class="stat-label">Rating</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">387+</div>
+            <div class="stat-label">Reviews</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">Daily</div>
+            <div class="stat-label">Fresh Ingredients</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">Chef</div>
+            <div class="stat-label">Owned & Operated</div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <h2 class="section-title">Our Signature Specialties</h2>
+        <div class="menu-grid">
+            <div class="menu-card">
+                <div class="menu-icon">🍔</div>
+                <h3>Signature Burgers</h3>
+                <p>Juicy, flame-grilled burgers packed with sauce and fresh toppings. The best burger experience in Miami.</p>
+            </div>
+            <div class="menu-card">
+                <div class="menu-icon">🌯</div>
+                <h3>Shawarma</h3>
+                <p>Authentic shawarma loaded with flavor. Tender meat, crispy outside, wrapped in fresh pita. Pure satisfaction.</p>
+            </div>
+            <div class="menu-card">
+                <div class="menu-icon">🔥</div>
+                <h3>Hibachi</h3>
+                <p>Freshly cooked on the griddle with vibrant vegetables and perfectly seasoned proteins. Hot off the grill.</p>
+            </div>
+            <div class="menu-card">
+                <div class="menu-icon">🌮</div>
+                <h3>Mexican Burger</h3>
+                <p>Bold Mexican flavors meet gourmet burgers. Spicy, savory, and utterly unforgettable in every bite.</p>
+            </div>
+            <div class="menu-card">
+                <div class="menu-icon">🍟</div>
+                <h3>French Fries</h3>
+                <p>Crispy golden fries, perfectly seasoned. The ideal side that steals the show every single time.</p>
+            </div>
+            <div class="menu-card">
+                <div class="menu-icon">🌯</div>
+                <h3>Burritos</h3>
+                <p>Hearty burritos wrapped tight with your choice of fillings. Satisfying, flavorful, and ready to go.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="reviews-container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Very good tasting shawarma, we got the bbq and beef options. Fast service and delicious food."</p>
+                    <p class="review-author">— Joshua Lidberg</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Absolutely loved this place! The burger was juicy and packed with sauce, and also tried the shawarma, full of flavor and so satisfying! It's truly a hidden gem."</p>
+                    <p class="review-author">— Marcela Jady</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"I've been to a lot of burger places in Miami. This is by far the best one!"</p>
+                    <p class="review-author">— Satisfied Customer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location" id="location">
+        <h2 class="section-title">Visit Us Today</h2>
+        <div class="location-content">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3572.4265649623266!2d-80.14774492346103!3d25.926658476457483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9a2e4f0f0f0f1%3A0x1234567890ab!2s2599%20NE%20163rd%20St%2C%20North%20Miami%20Beach%2C%20FL%2033160!5e0!3m2!1sen!2sus!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="location-info">
+                <div class="info-block">
+                    <div class="info-label">📍 Location</div>
+                    <div class="info-content">
+                        2599 NE 163rd St<br>
+                        North Miami Beach, FL 33160<br>
+                        <a href="https://www.google.com/maps/place/2599+NE+163rd+St,+North+Miami+Beach,+FL+33160/@25.9266584,-80.1477449,15z" target="_blank" rel="noopener noreferrer">Get Directions →</a>
+                    </div>
+                </div>
+                <div class="info-block">
+                    <div class="info-label">📞 Phone</div>
+                    <div class="info-content">
+                        <a href="tel:(772) 888-7771">(772) 888-7771</a>
+                    </div>
+                </div>
+                <div class="info-block">
+                    <div class="info-label">🕐 Hours</div>
+                    <div class="info-content">
+                        <ul class="hours-list">
+                            <li>
+                                <span>Monday – Sunday</span>
+                                <span>1:00 PM – 9:00 PM</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="info-block">
+                    <div class="info-label">💳 Price Range</div>
+                    <div class="info-content">
+                        $10–20 per person
+                    </div>
+                </div>
+                <div class="info-block">
+                    <div class="info-label">✨ Services</div>
+                    <div class="info-content">
+                        • Dine-in<br>
+                        • Curbside Pickup<br>
+                        • No-Contact Delivery
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta">
+        <h2>Craving Grill on Wheel?</h2>
+        <p>Open Daily 1 PM – 9 PM | Fresh, Flavorful, Fast</p>
+        <a href="tel:(772) 888-7771" class="cta-button">📞 Call Now: (772) 888-7771</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Grill on Wheel. All rights reserved. Best Burgers & Shawarma in North Miami Beach, FL.</p>
+    </footer>
+
+    <script>
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && document.querySelector(href)) {
+                    e.preventDefault();
+                    document.querySelector(href).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        if (hamburger) {
+            hamburger.addEventListener('click', function() {
+                this.style.transform = this.style.transform === 'scaleX(-1)' ? 'scaleX(1)' : 'scaleX(-1)';
+            });
+        }
+
+        // Analytics event for calls
+        document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+            link.addEventListener('click', function() {
+                console.log('Phone call initiated:', this.href);
+            });
+        });
+    </script>
+</body>
+</html>
